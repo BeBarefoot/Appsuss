@@ -1,11 +1,22 @@
+import newMsg from './cmp/add-msg.cmp.js'
+
 export default {
     template: `
     <div>
-<side-bar></side-bar>
         MAIL
+
+        <button @click="openNewMsg">Compose</button>
+        <new-Msg></new-Msg>
 
     </div>
     `,
     components:{
+    },
+    methods: {
+openNewMsg() {
+    this.$router.push('/mail/newMsg')}
+    },
+    components:{
+        newMsg
     }
 }

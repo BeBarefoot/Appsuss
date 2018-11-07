@@ -20,6 +20,7 @@ export default {
                 </ul>
             </div>
         </nav>
+        <!-- NAV BAR FOIR DESKTOP -->
         <div class="navbar-web-container">
             <li class="nav-item">
                 <a class="nav-link" href="#"  @click="goHome" >HOME </a>
@@ -43,12 +44,15 @@ data() {
 },
     methods: {
         goHome() {
+            this.$emit('home')
             this.$router.push("/home");
         },
         Mail() {
+            this.$emit('open-mail')
             this.$router.push("/mail");
         },
         Keep() {
+            this.$emit('open-notes')
             this.$router.push("/keep");
         },
     },
