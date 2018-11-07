@@ -1,6 +1,7 @@
 import homePage from './home-page.cmp.js'
 import myRoutes from './routes.js'
 import navBar from './cmp/nav-bar.cmp.js'
+import sideBar from './cmp/side-bar.cmp.js'
 
 Vue.use(VueRouter);
 const myRouter = new VueRouter({ routes: myRoutes })
@@ -10,7 +11,8 @@ new Vue({
     router: myRouter,
     components: {
         homePage,
-        navBar
+        navBar,
+        sideBar
 
     }
 })

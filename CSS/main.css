@@ -1,4 +1,6 @@
 @import 'navbar.css';
+@import 'side-bar.css';
+@import '/CSS/mail/main-mail.css';
 
 html,
 body {
