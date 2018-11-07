@@ -8,7 +8,7 @@ export default {
 <div class="sidenav">
 
 <keep-side-bar v-if="keepSide"></keep-side-bar>
-<mail-side-bar v-if="menuSide"></mail-side-bar>
+<mail-side-bar v-if="mailSide"></mail-side-bar>
 
 </div>
 </section>

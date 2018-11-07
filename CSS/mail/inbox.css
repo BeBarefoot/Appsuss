@@ -1,0 +1,38 @@
+.inbox-list  {
+    display: flex;
+    border: 2px solid black;
+    margin: 5px;
+}
+
+.inbox-list:hover  {
+transform: scale(1.02);
+cursor: pointer;
+}
+
+.mail-list {
+  padding-right: 160px;
+}
+
+.mail-line-details{
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex
+}
+
+.mail-from {
+    font-weight: bold
+}
+.mail-subject {
+    font-weight: bold
+}
+
+
+.delete-mail-inline {
+    top: 0;
+    float: right; 
+    margin: 5px;
+}
+
+.delete-mail-inline:hover {
+font-weight: bolder;
+}
