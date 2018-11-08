@@ -1,0 +1,141 @@
+.note-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.note-app-title {
+  margin: 30px;
+  /* border: 3px solid greenyellow; */
+  text-shadow: 3px 3px greenyellow;
+}
+
+.h4-title {
+    margin: 30px;
+    text-shadow: 3px 3px greenyellow;
+}
+
+.new-note-btn {
+  padding: 5px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  border-radius: 25px;
+  border: 1.5px solid greenyellow;
+}
+
+.note-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 200px;
+  height: 240px;
+  border: 3px solid greenyellow;
+  text-align: center;
+  margin: 5px;
+  padding: 2px;
+  cursor: pointer;
+  overflow-wrap: break-word;
+}
+
+.note-preview-img {
+  margin: 5px;
+  max-width: 90px;
+}
+
+.text-note-add-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-note-add-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  flex-direction: column;
+}
+.text-input {
+  margin: 5px;
+  max-width: 400px;
+}
+.image-input {
+  margin: 5px;
+  max-width: 400px;
+}
+.todo-input {
+  margin: 5px;
+}
+.todo-input-text {
+  margin: 5px;
+}
+
+.textarea {
+  max-width: 400px;
+  margin: 5px;
+}
+
+.save-note {
+  padding: 5px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  border-radius: 25px;
+  border: 1.5px solid greenyellow;
+  max-width: 90px;
+}
+
+.img-upload {
+  padding: 5px;
+  margin-bottom: 30px;
+  margin-left: 5px;
+  border-radius: 25px;
+  max-width: 400px;
+  border: 1.5px solid greenyellow;
+}
+
+.go-back {
+  padding: 5px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 25px;
+  border: 1.5px solid greenyellow;
+}
+
+.dlt-note {
+  padding: 5px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  border-radius: 25px;
+  border: 1.5px solid greenyellow;
+}
+
+.input {
+  margin-left: 5px;
+  border: 1.5px solid greenyellow
+}
+
+.li-edit {
+  list-style: none;
+}
+
+.text-note-btn {
+  padding: 5px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  border-radius: 25px;
+  border: 1.5px solid greenyellow;
+}
+
+.image-note-btn {
+  padding: 5px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  border-radius: 25px;
+  border: 1.5px solid greenyellow;
+}
+
+.todo-note-btn {
+  padding: 5px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  border-radius: 25px;
+  border: 1.5px solid greenyellow;
+}
