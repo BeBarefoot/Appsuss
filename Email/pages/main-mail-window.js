@@ -1,15 +1,16 @@
-import newMsg from "../cmp/add-msg.cmp.js";
-import { mailService } from "../services/mail.service.js"
-import mailList from "../cmp/mail-list.cmp.js";
+import newMsg from "../cmp/add-msg.cmp.js"
+import {
+  mailService
+} from "../services/mail.service.js"
+import mailList from "../cmp/mail-list.cmp.js"
+import mailFilter from "../cmp/mail-filter.cmp.js"
 
 export default {
   template: `
     <div>
-        <!-- <new-msg v-if='msg'></new-msg> -->
-        <!-- <marked open-box></marked> -->
        <section class="inbox-container">
-       <mail-list class="mail-list-container" :mails="mailsToShow"></mail-list> 
-
+       <mail-filter class="mail-filter-container" @set-filter="setFilter" :counter="readCount" ></mail-filter>
+       <mail-list  :mails="mailsToShow" v-on:unread="setReadCount"></mail-list> 
        </section>
  
     </div>
@@ -17,32 +18,39 @@ export default {
   data() {
     return {
       mails: "",
-      filter: ""
-      // msg: false,
-      // marked: false,
-      // inbox: false
-    };
+      filter: null,
+      readCount: ''
+    }
   },
   methods: {
-    getMail() {
-    }
+    setFilter(filterBy) {
+      this.filter = filterBy
+    },
+    setReadCount(readCount) {
+      this.readCount = readCount
+    },
+
   },
   computed: {
     mailsToShow() {
-      if (!this.filter) return this.mails;
-      else
+      if (!this.filter) return this.mails
+      else {
         var displaymails = this.mails.filter(mail => {
-          return mail.title.includes(this.filter.byTitle);
-        });
-      return displaymails;
+          let content = mail.content.toLowerCase()
+          let filter = this.filter.byContent.toLowerCase()
+          return content.includes(filter)
+        })
+      }
+      return displaymails
     }
   },
   components: {
     newMsg,
     mailService,
-    mailList
+    mailList,
+    mailFilter
   },
   created() {
     mailService.query().then(mail => (this.mails = mail))
   }
-};
+}

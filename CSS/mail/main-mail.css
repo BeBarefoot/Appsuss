@@ -1,2 +1,19 @@
 @import 'mail-side-bar.css';
-@import 'inbox.css'
+@import 'inbox.css';
+@import 'mail-display.css';
+@import 'add-msg.css';
+
+
+.mail-content {
+    width: 60vw;
+
+}
+
+.mail-full-list {
+    display: flex;
+    justify-content: center;
+}
+
+.bolder {
+    font-weight: bolder
+}

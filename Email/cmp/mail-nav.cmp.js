@@ -1,4 +1,4 @@
-import mainMailWindow from "../pages/main-mail-window.js";
+import mainMailWindow from "../pages/main-mail-window.js"
 
 export default {
   template: `
@@ -6,7 +6,7 @@ export default {
 
         <button @click="newMsg">Compose</button>
         <button @click="openMain">Inbox</button>
-        <button @click="openMain">Important</button>
+        <button @click="important">Important</button>
         
     </section>
     `,
@@ -18,7 +18,7 @@ export default {
         inbox: "inbox",
         marked: "marked"
       }
-    };
+    }
   },
   methods: {
     openMain() {
@@ -26,6 +26,9 @@ export default {
     },
     newMsg(){
       this.$router.push('/mail/newMail')
+    },
+    important(){
+      this.$router.push('/mail/important')
     }
   },
   components: {
@@ -33,4 +36,4 @@ export default {
   },
   created() {
   }
-};
+}

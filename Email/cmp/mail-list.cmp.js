@@ -1,19 +1,31 @@
-import mailPreview from "./mail-preview.cmp.js";
+import mailPreview from "./mail-preview.cmp.js"
 
 export default {
   props: ["mails"],
   template: `
     <div>
-        <section >
+          <section class="mail-list-container">
             <ul class="mail-list">
-              <mail-preview v-for="mail in mails" :currMail='mail'></mail-preview>
+              <mail-preview v-for="mail in mails" :currMail='mail'  @read-count-up="setCount"></mail-preview>
             </ul>
         </section>
     </div>
     `,
-  components: {
-    mailPreview
+  data() {
+    return {
+      isReadCount: 0
+    }
   },
-  created() {
-  }
-};
+  methods: {
+    setCount(count) {
+      if (count === false) this.isReadCount++
+      else this.isReadCount--
+      if (this.isReadCount < 0) this.isReadCount = 0
+      this.$emit('unread', this.isReadCount)
+    }
+  },
+  components: {
+    mailPreview,
+  },
+  created() {}
+}

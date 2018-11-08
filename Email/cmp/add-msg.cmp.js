@@ -1,25 +1,28 @@
-export default {
-    template: `
-    <section class="add-msg-containter">
-        
-        <div>
-            <label>From:</label>
-            <input type="text" v-model="msg.from"/> 
-            <label>To:</label>
-            <input type="text" v-model="msg.to"/> 
-        <textarea class="user-text" rows="4" cols="50" v-model="msg.text"></textarea>
-          
-        </div>
 
-    </section>
+import msgContainer from './msg-container.cmp.js'
+export default {
+  template: `
+  
+<div>
+
+<msg-container> </msg-container>
+
+
+</div>
+      
     `,
-    data() {
-        return{
-            msg:{
-                text:'',
-                from:'',
-                to:'',
-            }
-        }
+  data() {
+    return {
+      replyMail: ''
     }
+  },
+  methods: {
+ 
+  },
+  created() {
+    
+  },
+  components: {
+    msgContainer
+  }
 }

@@ -1,4 +1,5 @@
 export const OPEN_MAIL = 'open-mail'
+export const REPLY_MSG = 'reply-msg'
 // export const OPEN_NOTES = 'open-notes'
 
 

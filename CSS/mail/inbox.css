@@ -1,38 +1,113 @@
-.inbox-list  {
-    display: flex;
-    border: 2px solid black;
-    margin: 5px;
-}
-
-.inbox-list:hover  {
-transform: scale(1.02);
-cursor: pointer;
-}
-
 .mail-list {
-  padding-right: 160px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 8px;
+  width: 100%;
 }
 
-.mail-line-details{
-    border: 1px solid black;
-    border-radius: 5px;
-    display: flex
+.inbox-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  background: linear-gradient(to right, #005aa7, #fffde4);
+  border-bottom: 1px solid black;
+  transition: all 0.3s
 }
+
+.inbox-list:hover {
+  cursor: pointer;
+  border-bottom: 2px solid black;
+  transform: scale(1.005);
+  transition: all 0.3s
+}
+
+
+.mail-line-details {
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
 
 .mail-from {
-    font-weight: bold
-}
-.mail-subject {
-    font-weight: bold
+  font-size: 110%;
+  font-weight: bolder;
+  margin-right: 5px;
 }
 
+.mail-subject {
+  font-weight: 700;
+  margin-right: 5px;
+
+}
 
 .delete-mail-inline {
-    top: 0;
-    float: right; 
-    margin: 5px;
+  top: 0;
+  float: right;
+  margin: 5px;
 }
 
 .delete-mail-inline:hover {
-font-weight: bolder;
+  font-weight: bolder;
+}
+
+.msg-read {
+  background-color: yellow;
+}
+
+.msg-unread {
+  background: whitesmoke;
+}
+
+.mark-as-important {
+  color: black;
+}
+
+.mark-as-important:hover {
+  background-color: Gold;
+  border-radius: 6px;
+}
+
+.msg-important {
+  background-color: Gold;
+}
+
+.mail-controlers {
+  display: flex;
+  align-content: space-between;
+}
+
+.mail-controlers p {
+  margin: 8px;
+}
+
+.inbox-container {
+  margin-left: 160px;
+
+}
+
+.mail-filter {
+  display: flex;
+}
+
+.unread-text {
+  margin: 10px;
+}
+
+.mail-content {
+  overflow: visible;
+
+}
+
+.sort-text {
+  /* float: right; */
+  display: flex;
+  justify-content: baseline;
+  right: 0;
+}
+
+.sort-text p {
+  margin: 0 10px;
 }
