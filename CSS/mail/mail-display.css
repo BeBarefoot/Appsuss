@@ -1,0 +1,28 @@
+.mail-details-text ul {
+    list-style: none;
+}
+
+.mail-display-from {
+    margin-bottom: 15px;
+}
+
+.display-single-mail-container {
+    margin-left: 180px;
+}
+.mail-display-next-back-btn{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mail-single-display-headline{
+    display: flex;
+    align-items: baseline;
+}
+.mail-single-display-email{
+    margin-left: 15px;
+}
+
+.mail-display-content {
+    border: 1px solid gray;
+    height: 40vh;
+}

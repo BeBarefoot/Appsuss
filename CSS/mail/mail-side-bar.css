@@ -1,0 +1,23 @@
+.mail-side-bar {
+    float: left;
+    margin-left: 30px;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    
+}
+
+.mail-side-bar button {
+    background: none;
+    margin-bottom: 50px;
+    width: 100px;
+    border-radius: 15px;
+}
+
+.mail-side-bar button:hover {
+cursor: pointer;
+transform: scale(1.05);
+font-weight: 500;
+background:rgb(151, 148, 148)
+}
