@@ -7,7 +7,7 @@ export default {
         <section v-if="note && note.id" class="note-editor" >
         <h4 class="h4-title">Edit Your Note</h4>
         <input class="input" type="text" v-model="note.title" >
-        <li class="li-edit" v-for="(txt,idx) in note.txts" type="text"> 
+        <li class="li-edit" v-for="(txt,idx) in note.txts" type="text"> {{txt}}
             <button 
             v-if="note.type === 'todo' "
             @click="deleteTodo(idx)">{{note.type}}</button>
@@ -16,15 +16,17 @@ export default {
         </li>
         <button class="go-back" @click="goBack">Go Back To Notes</button>
         <button class="dlt-note" @click="deleteNote">Delete Note</button>
-        <button class="save-note" @click="addNote">Save Note</button>
+        <button class="save-edited-note" @click="addNote">Save Note</button>
         </section>
         <div v-else class="note-editor" >
             <h4 class="h4-title">Add Note</h4>
             <button class="text-note-btn" @click="setNoteAdd('text')">text note</button>
             <button class="image-note-btn" @click="setNoteAdd('image')">image note</button>
             <button class="todo-note-btn" @click="setNoteAdd('todo')">todo note</button>
+            <button class="go-back" @click="goBack">Go Back To Notes</button>
             <div  v-if="(note.type === 'text')">
               <div class="text-note-add-container">
+              <h2 class="upload-img-title">Upload Text Note</h2>
                     <input class="text-input" type="text" v-model="note.title" placeholder="Name Your Note">
                     <textarea class="textarea" v-model="note.txts[0]" rows="4" cols="20">
                     </textarea>
@@ -33,7 +35,7 @@ export default {
             </div>
             <div v-if="(note.type === 'image')">
                <div class="text-note-add-container">
-                 <h2>Upload Img</h2>
+                 <h2 class="upload-img-title">Upload Image Note</h2>
                     <input class="image-input" type="text" v-model="note.title" placeholder="Name Your Note">
                     <img v-if="note.url" :src="note.url" />
                     <input class="img-upload" @change="onFileChange" type="file" name="Upload Image" id="preview-img">
@@ -42,8 +44,10 @@ export default {
             </div>
             <div v-if="(note.type === 'todo')">
                     <div class="todo-note-add-container">
+                    <h2 class="upload-img-title">Upload Todo Note</h2>
                     <input class="todo-input" type="text"  v-model="note.title" placeholder="Name Your Note">
                     <input class="todo-input-text" type="text" placeholder="Write Your Todo">
+                    <button class="save-note" @click="addNote">Save Note</button>
                 </div>  
             </div>
         </div>

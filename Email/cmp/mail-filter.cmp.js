@@ -11,8 +11,6 @@ export default {
            <button v-if="!isSearch" type="button" class="btn btn-outline-secondary" @click="search">Search</button>
            <button v-if="isSearch" type="button" class="btn btn-outline-secondary" @click="reset">Reset</button>
           </div>          
-          <p class="unread-text" >Unread Massages: {{counter}}</p>
-         
           <div class="sort-text">
              <p >Sort: </p> <button @click="sortByDate">{{sortDate}} </button>
            </div>

@@ -72,7 +72,7 @@ function createInitialNotes() {
             id: utilService.makeId(6),
             type: 'todo',
             title: 'Done with this shit',
-            txts: ['to do landury' ,'to do Css'],
+            txts: ['' ,''],
             importance: false,
         },
 
