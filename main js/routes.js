@@ -7,7 +7,7 @@ import displayMail from '../Email/cmp/display-mail.cmp.js';
 import importantMail from '../Email/cmp/mail-important.cmp.js';
 
 var myRoutes = [
-    { path: '/home', component: homePage },
+    { path: '/', component: homePage },
     { path: '/mail/newMsg', component: newMsg },
     { path: '/keep', component: noteApp },
     { path: '/keep/edit', component: noteEdit },
