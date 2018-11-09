@@ -3,7 +3,7 @@ import mailPreview from "./mail-preview.cmp.js"
 export default {
     props: ["mails"],
     template: `
-    <div>
+    <div class="papa-div-list">
           <section class="mail-list-container">
             <ul class="mail-list">
               <mail-preview v-for="mail in mails" :currMail='mail'  @read-count-up="setCount"></mail-preview>

@@ -36,7 +36,6 @@ export default {
                 return setTimeout(() => {
                     this.massage = ''
                 }, 1500)
-
             }
             setTimeout(() => {
                 this.massage = ''

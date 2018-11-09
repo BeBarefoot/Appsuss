@@ -30,23 +30,8 @@
     cursor: pointer;
 }
 
-.dark-blue-text {
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.dark-pink-text {
-    color: #ac003a;
-}
-
-.dark-amber-text {
-    color: #ff6f00;
-}
-
-.dark-teal-text {
-    color: #004d40;
-}
-
 .nav-item {
+    color: white;
     text-align: center;
 }
 
@@ -73,9 +58,6 @@
     .nav-link,
     .contact-click {
         padding: 0 16px;
-    }
-    .logo {
-        grid-column: (5/6);
     }
     .nav-img {
         padding: 0;
