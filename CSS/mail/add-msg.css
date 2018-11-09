@@ -4,6 +4,7 @@
     margin-left: 170px;
     max-width: 80%;
 }
+
 .user-text {
     margin-top: 10px;
 }
@@ -12,4 +13,22 @@
     right: 0;
     margin-top: 10px;
     width: 60px
+}
+
+.msg-sent-modal {
+    background: cyan;
+    color: black;
+    padding: 20px;
+    width: 200px;
+    position: absolute;
+}
+
+.fade-msg-enter-active,
+.fade-msg-leave-active {
+    transition: opacity 0.25s ease-out;
+}
+
+.fade-msg-enter,
+.fade-msg-leave-to {
+    opacity: 0;
 }

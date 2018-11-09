@@ -1,13 +1,14 @@
 import {
-  mailService
+    mailService
 } from "../services/mail.service.js"
 
 import mailPreview from "./mail-preview.cmp.js"
 import mailFilter from "./mail-filter.cmp.js"
-
+import navBar from '../cmp/mail-nav.cmp.js'
 export default {
-  template: `
+    template: `
     <div >
+      <nav-bar></nav-bar>
     <section class="inbox-container">
     <mail-filter class="mail-filter-container" @set-filter="setFilter" :counter="readCount" ></mail-filter>
       <section class="mail-list-container">
@@ -18,40 +19,41 @@ export default {
       </section>
     </div>
       `,
-  data() {
-    return {
-      mails: '',
-      isRead: {
-        active: "",
-        text: "Read"
-      },
-      isImportant: "",
-      counter: '',
-      readCount: ''
+    data() {
+        return {
+            mails: '',
+            isRead: {
+                active: "",
+                text: "Read"
+            },
+            isImportant: "",
+            counter: '',
+            readCount: ''
 
-    }
-  },
-  methods: {
-    setCount(count) {
-      if (count === false) this.isReadCount++
-      else this.isReadCount--
-      if (this.isReadCount < 0) this.isReadCount = 0
-      this.$emit('unread', this.isReadCount)
+        }
     },
-    setFilter(filterBy) {
-      this.filter = filterBy
+    methods: {
+        setCount(count) {
+            if (count === false) this.isReadCount++
+                else this.isReadCount--
+                    if (this.isReadCount < 0) this.isReadCount = 0
+            this.$emit('unread', this.isReadCount)
+        },
+        setFilter(filterBy) {
+            this.filter = filterBy
+        },
+        setReadCount(readCount) {
+            this.readCount = readCount
+        },
     },
-    setReadCount(readCount) {
-      this.readCount = readCount
+    created() {
+        mailService
+            .getImportant()
+            .then(mails => this.mails = mails)
     },
-  },
-  created() {
-    mailService
-      .getImportant()
-      .then(mails => this.mails = mails)
-  },
-  components: {
-    mailPreview,
-    mailFilter
-  },
+    components: {
+        mailPreview,
+        mailFilter,
+        navBar
+    },
 }

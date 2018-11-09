@@ -1,28 +1,30 @@
-
 import msgContainer from './msg-container.cmp.js'
+import navBar from '../cmp/mail-nav.cmp.js'
+
 export default {
-  template: `
+    template: `
   
 <div>
-
+<nav-bar></nav-bar>
 <msg-container> </msg-container>
 
 
 </div>
       
     `,
-  data() {
-    return {
-      replyMail: ''
+    data() {
+        return {
+            replyMail: ''
+        }
+    },
+    methods: {
+
+    },
+    created() {
+
+    },
+    components: {
+        msgContainer,
+        navBar
     }
-  },
-  methods: {
- 
-  },
-  created() {
-    
-  },
-  components: {
-    msgContainer
-  }
 }

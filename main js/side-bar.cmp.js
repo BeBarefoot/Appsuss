@@ -1,8 +1,8 @@
 // import eventBus {OPEN_MAIL,OPEN_NOTES} from '/event-bus.js';
 import keepSideBar from "../Notes/notepages/note-page.js";
-import mailSideBar from "../Email/mail-home.cmp.js";
+import mailSideBar from "../Email/pages/main-mail-window.js";
 export default {
-  template: `
+    template: `
 <section  class="side-bar">
 
 <div class="sidenav">
@@ -13,27 +13,28 @@ export default {
 </div>
 </section>
     `,
-  data() {
-    return {
-      keepSide: false,
-      mailSide: false
-    };
-  },
-  components: {
-    keepSideBar,
-    mailSideBar
-  },
-  created() {
-    this.$on('open-mail', ()=> {
-        keepMail=true,
-        keepSide=false
-    })
-    this.$on('open-notes',()=> {
-        keepSide=true
-        keepMail=false
-    })
-    this.$on('home',()=> {
-        keepSide=false
-    keepMail=false})
-  }
+    data() {
+        return {
+            keepSide: false,
+            mailSide: false
+        };
+    },
+    components: {
+        keepSideBar,
+        mailSideBar
+    },
+    created() {
+        this.$on('open-mail', () => {
+            keepMail = true,
+                keepSide = false
+        })
+        this.$on('open-notes', () => {
+            keepSide = true
+            keepMail = false
+        })
+        this.$on('home', () => {
+            keepSide = false
+            keepMail = false
+        })
+    }
 };

@@ -1,21 +1,20 @@
 .main-header {
-    background: rgb(128, 128, 128);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background: linear-gradient(to right, #334d50, #cbcaa5);
     margin-bottom: 2vh;
     height: 70px;
 }
 
 .navbar-web-container {
+    position: fixed;
     display: none;
 }
 
-.logo {
-    font-family: cursive;
-    transition: all 0.3s ease-in-out;
-}
-
-.logo:hover {
-    transition: all 0.3s ease-in-out;
-    filter: blur(5px);
+.navbar-collapse {
+    display: flex;
+    flex-direction: row;
 }
 
 .nav-link {
@@ -68,9 +67,8 @@
     }
     .navbar-web-container {
         display: flex;
-        margin-right: 30px;
         flex-direction: row;
-        justify-content: flex-end;
+        align-items: center;
     }
     .nav-link,
     .contact-click {
@@ -79,15 +77,10 @@
     .logo {
         grid-column: (5/6);
     }
-}
-
-.search-bar {
-    display: block;
-    border-radius: 40px;
-    margin: 0 auto 5vh auto;
-    width: 40%;
-}
-
-.search-bar:focus {
-    outline: none;
+    .nav-img {
+        padding: 0;
+        margin: 0;
+        display: block;
+        transform: scale(0.2)
+    }
 }

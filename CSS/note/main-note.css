@@ -1,170 +1,189 @@
 .note-list {
-  margin-left: 200px;
-  display: flex;
-  flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 200px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .note-app-title {
-  margin-left: 200px;
-  text-shadow: 3px 3px greenyellow;
+    margin-left: 200px;
+    text-shadow: 3px 3px greenyellow;
 }
 
 .h4-title {
-  margin-left: 200px;
-  text-shadow: 3px 3px greenyellow;
-  white-space: normal;
+    margin-left: 200px;
+    text-shadow: 3px 3px greenyellow;
+    white-space: normal;
 }
 
 .new-note-btn {
-  padding: 5px;
-  margin-bottom: 30px;
-  margin-left: 30px;
-  border-radius: 25px;
-  border: 1.5px solid greenyellow;
+    cursor: pointer;
+    margin-top: 30px;
+    padding: 5px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    border-radius: 25px;
+    border: 1.5px solid greenyellow;
 }
 
 .note-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 200px;
-  height: 240px;
-  border: 3px solid greenyellow;
-  text-align: center;
-  margin: 5px;
-  padding: 2px;
-  cursor: pointer;
-  overflow-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 200px;
+    height: 240px;
+    border: 3px solid greenyellow;
+    text-align: center;
+    margin: 5px;
+    padding: 2px;
+    cursor: pointer;
+    overflow-wrap: break-word;
 }
 
 .note-preview-img {
-  margin: 5px;
-  max-width: 90px;
+    margin: 5px;
+    max-width: 90px;
 }
 
 .text-note-add-container {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .todo-note-add-container {
-  display: flex;
-  justify-content: space-between;
-  max-width: 400px;
-  flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    flex-direction: column;
 }
+
 .text-input {
-  margin-left: 200px;
-  max-width: 400px;
+    margin-left: 200px;
+    max-width: 400px;
 }
+
 .image-input {
-  margin-left: 200px;
-  margin-bottom: 5px;
-  max-width: 400px;
+    margin-left: 200px;
+    margin-bottom: 5px;
+    max-width: 400px;
 }
+
 .todo-input {
-  margin-left: 200px;
-  margin-bottom: 5px;
-  max-width: 400px;
+    margin-left: 200px;
+    margin-bottom: 5px;
+    max-width: 400px;
 }
+
 .todo-input-text {
-  margin-left: 200px;
-  max-width: 400px;
+    margin-left: 200px;
+    max-width: 400px;
 }
 
 .textarea {
-  max-width: 400px;
-  margin-top: 5px;
-  margin-left: 200px;
+    max-width: 400px;
+    margin-top: 5px;
+    margin-left: 200px;
 }
 
 .save-note {
-  padding: 5px;
-  margin-bottom: 30px;
-  margin-top: 5px;
-  margin-left: 200px;
-  border-radius: 25px;
-  border: 1.5px solid greenyellow;
-  max-width: 90px;
+    padding: 5px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    margin-left: 200px;
+    border-radius: 25px;
+    border: 1.5px solid greenyellow;
+    max-width: 90px;
 }
 
 .save-edited-note {
-  padding: 5px;
-  margin-bottom: 30px;
-  margin-top: 5px;
-  margin-left: 5px;
-  border-radius: 25px;
-  border: 1.5px solid greenyellow;
-  max-width: 90px;
+    padding: 5px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 25px;
+    border: 1.5px solid greenyellow;
+    max-width: 90px;
 }
 
 .img-upload {
-  padding: 5px;
-  margin-bottom: 30px;
-  margin-left: 200px;
-  max-width: 400px;
+    padding: 5px;
+    margin-bottom: 30px;
+    margin-left: 200px;
+    max-width: 400px;
 }
 
 .go-back {
-  padding: 5px;
-  margin-bottom: 30px;
-  margin-top: 30px;
-  margin-left: 200px;
-  border-radius: 25px;
-  border: 1.5px solid greenyellow;
+    padding: 5px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 200px;
+    border-radius: 25px;
+    border: 1.5px solid greenyellow;
 }
 
 .dlt-note {
-  padding: 5px;
-  margin-bottom: 30px;
-  margin-left: 5px;
-  border-radius: 25px;
-  border: 1.5px solid greenyellow;
+    padding: 5px;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    border-radius: 25px;
+    border: 1.5px solid greenyellow;
 }
 
 .input {
-  margin-left: 200px;
-  border: 1.5px solid greenyellow;
+    margin-left: 200px;
+    border: 1.5px solid greenyellow;
 }
 
 .li-edit {
-  list-style: none;
-  margin-left: 200px;
+    list-style: none;
+    margin-left: 200px;
 }
 
 .text-note-btn {
-  padding: 5px;
-  margin-bottom: 30px;
-  margin-left: 200px;
-  border-radius: 25px;
-  border: 1.5px solid greenyellow;
+    padding: 5px;
+    margin-bottom: 30px;
+    margin-left: 200px;
+    border-radius: 25px;
+    border: 1.5px solid greenyellow;
 }
 
 .image-note-btn {
-  padding: 5px;
-  margin-bottom: 30px;
-  margin-left: 10px;
-  border-radius: 25px;
-  border: 1.5px solid greenyellow;
+    padding: 5px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    border-radius: 25px;
+    border: 1.5px solid greenyellow;
 }
 
 .todo-note-btn {
-  padding: 5px;
-  margin-bottom: 30px;
-  margin-left: 10px;
-  border-radius: 25px;
-  border: 1.5px solid greenyellow;
+    padding: 5px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    border-radius: 25px;
+    border: 1.5px solid greenyellow;
 }
 
 .app-note {
-  align-items: center;
+    align-items: center;
 }
 
 .upload-img-title {
-  margin-left: 200px;
-  text-shadow: 3px 3px greenyellow;
+    margin-left: 200px;
+    text-shadow: 3px 3px greenyellow;
 }
 
 .search-note-input {
-  margin-left: 200px;
+    margin-left: 200px;
+}
+
+.note-filter-container button {
+    transform: scale(0.8)
+}
+
+.note-filter-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-top: 30px;
+    position: fixed;
 }

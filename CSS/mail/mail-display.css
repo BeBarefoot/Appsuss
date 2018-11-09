@@ -7,22 +7,33 @@
 }
 
 .display-single-mail-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
     margin-left: 180px;
 }
-.mail-display-next-back-btn{
+
+.mail-display-next-back-btn {
     display: flex;
     justify-content: space-evenly;
 }
 
-.mail-single-display-headline{
+.mail-single-display-headline {
     display: flex;
     align-items: baseline;
 }
-.mail-single-display-email{
+
+.mail-single-display-email {
     margin-left: 15px;
 }
 
 .mail-display-content {
     border: 1px solid gray;
     height: 40vh;
+}
+
+.mail-content {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
 }

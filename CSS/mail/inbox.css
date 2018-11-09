@@ -1,113 +1,133 @@
+.mail-full-list:first-child {
+    margin-top: 170px;
+}
+
 .mail-list {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding: 8px;
-  width: 100%;
+    /* margin-top: 80px; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 8px;
+    width: 100%;
 }
 
 .inbox-list {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 100%;
-  background: linear-gradient(to right, #005aa7, #fffde4);
-  border-bottom: 1px solid black;
-  transition: all 0.3s
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    background: linear-gradient(to right, #005aa7, #fffde4);
+    border-bottom: 1px solid black;
+    transition: all 0.3s
 }
 
 .inbox-list:hover {
-  cursor: pointer;
-  border-bottom: 2px solid black;
-  transform: scale(1.005);
-  transition: all 0.3s
+    cursor: pointer;
+    border-bottom: 2px solid black;
+    transform: scale(1.005);
+    transition: all 0.3s
 }
-
 
 .mail-line-details {
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
 }
 
-
 .mail-from {
-  font-size: 110%;
-  font-weight: bolder;
-  margin-right: 5px;
+    font-size: 110%;
+    font-weight: bolder;
+    margin-right: 5px;
 }
 
 .mail-subject {
-  font-weight: 700;
-  margin-right: 5px;
-
+    font-weight: 700;
+    margin-right: 5px;
 }
 
 .delete-mail-inline {
-  top: 0;
-  float: right;
-  margin: 5px;
+    top: 0;
+    float: right;
+    margin: 5px;
 }
 
 .delete-mail-inline:hover {
-  font-weight: bolder;
+    font-weight: bolder;
 }
 
 .msg-read {
-  background-color: yellow;
+    background-color: yellow;
 }
 
 .msg-unread {
-  background: whitesmoke;
+    background: whitesmoke;
 }
 
 .mark-as-important {
-  color: black;
+    color: black;
 }
 
 .mark-as-important:hover {
-  background-color: Gold;
-  border-radius: 6px;
+    background-color: Gold;
+    border-radius: 6px;
 }
 
 .msg-important {
-  background-color: Gold;
+    background-color: Gold;
 }
 
 .mail-controlers {
-  display: flex;
-  align-content: space-between;
+    display: flex;
+    align-content: space-between;
 }
 
 .mail-controlers p {
-  margin: 8px;
+    margin: 8px;
 }
 
 .inbox-container {
-  margin-left: 160px;
-
+    margin-left: 160px;
 }
 
 .mail-filter {
-  display: flex;
+    /* margin-left: 1vw; */
+    /* padding-bottom: 100px; */
+}
+
+.search-mail-container button {
+    margin-left: 3px;
+}
+
+.search-mail-container {
+    display: flex;
+    background: whitesmoke;
+    position: fixed;
+    margin-top: 70px;
+    padding: 20px;
+    z-index: 1;
+    width: 100vw;
 }
 
 .unread-text {
-  margin: 10px;
+    margin: 10px;
 }
 
 .mail-content {
-  overflow: visible;
-
+    overflow: visible;
 }
 
 .sort-text {
-  /* float: right; */
-  display: flex;
-  justify-content: baseline;
-  right: 0;
+    /* float: right; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    right: 0;
 }
 
 .sort-text p {
-  margin: 0 10px;
+    margin: 0 10px;
+}
+
+.mail-full-list .btn {
+    transform: scale(0.8)
 }

@@ -1,8 +1,8 @@
 import mailPreview from "./mail-preview.cmp.js"
 
 export default {
-  props: ["mails"],
-  template: `
+    props: ["mails"],
+    template: `
     <div>
           <section class="mail-list-container">
             <ul class="mail-list">
@@ -11,21 +11,24 @@ export default {
         </section>
     </div>
     `,
-  data() {
-    return {
-      isReadCount: 0
+    data() {
+        return {
+            isReadCount: 0,
+        }
+    },
+    methods: {
+        setCount(count) {
+            if (count === false) this.isReadCount++
+                else this.isReadCount--
+                    if (this.isReadCount < 0) this.isReadCount = 0
+            this.$emit('unread', this.isReadCount)
+        },
+
+    },
+    components: {
+        mailPreview,
+    },
+    created() {
+
     }
-  },
-  methods: {
-    setCount(count) {
-      if (count === false) this.isReadCount++
-      else this.isReadCount--
-      if (this.isReadCount < 0) this.isReadCount = 0
-      this.$emit('unread', this.isReadCount)
-    }
-  },
-  components: {
-    mailPreview,
-  },
-  created() {}
 }

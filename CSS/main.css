@@ -1,12 +1,25 @@
 @import 'navbar.css';
 @import 'side-bar.css';
-@import '/CSS/mail/main-mail.css';
-@import '/CSS/note/main-note.css';
-
+@import './mail/main-mail.css';
+@import './note/main-note.css';
+@import 'home-page.css';
 html,
 body {
     margin: 0 auto;
     width: 100%;
     height: 100%;
+}
 
+@font-face {
+    src: url('../lib/font/Roboto-Regular.ttf');
+    font-family: 'Roboto', sans-serif;
+}
+
+@font-face {
+    src: url('../lib/font/Bellefair-Regular.ttf');
+    font-family: 'Bellefair', sans-serif;
+}
+
+li {
+    list-style: none;
 }

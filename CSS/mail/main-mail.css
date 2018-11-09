@@ -2,11 +2,8 @@
 @import 'inbox.css';
 @import 'mail-display.css';
 @import 'add-msg.css';
-
-
 .mail-content {
     width: 60vw;
-
 }
 
 .mail-full-list {
@@ -16,4 +13,8 @@
 
 .bolder {
     font-weight: bolder
+}
+
+.add-msg-containter {
+    padding-top: 100px;
 }
