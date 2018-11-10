@@ -45,7 +45,7 @@ export default {
     methods: {
         goHome() {
             this.$emit('home')
-            this.$router.push("/home");
+            this.$router.push("/");
         },
         Mail() {
             this.$emit('open-mail')

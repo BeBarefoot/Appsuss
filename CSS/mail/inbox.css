@@ -12,13 +12,15 @@
 }
 
 .inbox-list {
+    border-radius: 3px;
+    margin: 0.0px auto;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
     background: linear-gradient(to right, #005aa7, #fffde4);
     border-bottom: 1px solid black;
-    transition: all 0.3s
+    transition: transform 0.3s
 }
 
 @media (max-width:650px) {
@@ -29,7 +31,6 @@
     }
     .inbox-list {
         font-size: 70%;
-        padding: 0
     }
     .mail-controlers {
         display: block;
@@ -40,10 +41,16 @@
 }
 
 .inbox-list:hover {
+    font-weight: bold;
+}
+
+.inbox-list:hover {
     cursor: pointer;
-    border-bottom: 2px solid black;
-    transform: scale(1.005);
-    transition: all 0.3s
+    border-bottom: -1px solid black;
+    border-top: -1px solid black;
+    transform: scale(1.004);
+    transition: transform 0.3s ease;
+    opacity: 0.92;
 }
 
 .mail-line-details {
@@ -54,7 +61,6 @@
 
 .mail-from {
     font-size: 110%;
-    font-weight: bolder;
     margin-right: 5px;
 }
 
@@ -107,11 +113,6 @@
     margin-left: 160px;
 }
 
-.mail-filter {
-    /* margin-left: 1vw; */
-    /* padding-bottom: 100px; */
-}
-
 .search-mail-container button {
     margin-left: 3px;
 }
@@ -131,6 +132,18 @@
     .search-mail-container {
         flex-direction: column;
         float: left;
+    }
+    .mail-side-bar button {
+        transform: scale(0.8)
+    }
+    .mail-side-bar {
+        padding-top: 77px;
+        display: flex;
+        justify-items: center;
+        margin: 0;
+    }
+    .inbox-container {
+        margin-left: 120px;
     }
 }
 

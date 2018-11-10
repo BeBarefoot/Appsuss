@@ -10,3 +10,10 @@
         overflow-x: hidden;
         padding-top: 20px;
     }
+    
+    @media (max-width:650px) {
+        .sidenav {
+            width: 120px;
+            text-align: center;
+        }
+    }
