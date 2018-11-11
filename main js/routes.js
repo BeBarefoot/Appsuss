@@ -1,8 +1,8 @@
 import homePage from './home-page.cmp.js';
 import mainInbox from '../Email/pages/main-mail-window.js';
 import newMsg from '../Email/cmp/add-msg.cmp.js';
-import noteApp from '../Notes/notepages/note-page.js';
-import noteEdit from '../Notes/notepages/note-edit.js'
+import noteApp from '../Notes/notePages/note-page.js';
+import noteEdit from '../Notes/notePages/note-edit.js'
 import displayMail from '../Email/cmp/display-mail.cmp.js';
 import importantMail from '../Email/cmp/mail-important.cmp.js';
 
