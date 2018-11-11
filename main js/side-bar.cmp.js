@@ -1,5 +1,5 @@
 // import eventBus {OPEN_MAIL,OPEN_NOTES} from '/event-bus.js';
-import keepSideBar from "../Notes/notepages/note-page.js";
+import keepSideBar from "../Notes/notePages/note-page.js";
 import mailSideBar from "../Email/pages/main-mail-window.js";
 export default {
     template: `
